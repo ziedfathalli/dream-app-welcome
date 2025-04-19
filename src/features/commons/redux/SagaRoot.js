@@ -1,10 +1,8 @@
 import { all, } from 'redux-saga/effects';
-import UserServicesRoot from '../../users/services/UserServicesRoot';
-import MessagesRoot from '../../messages/services/MessagesRoot';
+import DreamAppWelcomeRoot from '../../dreamAppWelcome/services/DreamAppWelcomeRoot';
 
 export default function* rootSaga() {
   yield all([
-    ...UserServicesRoot,
-    ...MessagesRoot,
+    ...DreamAppWelcomeRoot,
   ]);
 }

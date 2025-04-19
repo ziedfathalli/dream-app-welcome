@@ -7,12 +7,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'yo-mess-bundle.js',
+    filename: 'dream-app-welcome-bundle.js',
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|png|jpe?g|gif|svg)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -57,12 +57,19 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist'),
+    static: {
+      directory: path.join(__dirname, '../public'), // Répertoire pour les fichiers statiques
+    },
     port: 9001,
     historyApiFallback: true,
-    inline: true,
     open: true,
     hot: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080', // Backend Spring Boot
+        changeOrigin: true, // Permet de changer l'origine de la requête (utile pour CORS)pathRewrite: { '^/aa': '', }, // Supprime '/api' dans l'URL avant de la rediriger
+      },
+    },
   },
   resolve: {
     extensions: [

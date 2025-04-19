@@ -1,19 +1,9 @@
 import {
-  UserReducer,
-  UserFriendsReducer,
-} from '../../users/redux';
-import {
-  MessageAddReducer,
-  MessageDeleteReducer,
-  MessagesReducer,
-} from '../../messages/redux';
+  DreamAppWelcomeReducer,
+} from '../../dreamAppWelcome/redux';
 
 const ReducerRooter = {
-  user: UserReducer,
-  userFriends: UserFriendsReducer,
-  messageAdd: MessageAddReducer,
-  messageDelete: MessageDeleteReducer,
-  messages: MessagesReducer,
+  dreamAppWelcome: DreamAppWelcomeReducer,
 };
 
 export default ReducerRooter;

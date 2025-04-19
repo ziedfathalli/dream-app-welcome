@@ -1,7 +1,5 @@
-# yo-mess-application
-YoMess (Your Messages) est une application permettant d'envoyer et recevoir des messages à tout moment et en toute sécurité.
+# dream-app-welcome
 
-https://www.slideshare.net/helabenkhalfallah/yo-messapp
 
 ## Comment lancer le projet ?
 
@@ -26,21 +24,9 @@ npm run start:server
 **Routes de tests :**
 
 ```
-http://localhost:9001/user-login
-http://localhost:9001/yo-mess-dashboard
+http://localhost:9001/dream-app-welcome
 ```
 
-## Architecture & conception
-https://www.slideshare.net/helabenkhalfallah/yo-messapp
-
-## Bonnes pratiques
-
-### Javascript
-https://medium.com/@helabenkhalfallah/js-like-i-love-to-do-6234570f0d1a
-
-### Clean code & architecture
-https://medium.com/@helabenkhalfallah/how-to-write-a-dont-make-me-think-code-for-front-end-73ff20ef607e
-https://medium.com/@helabenkhalfallah/from-mobile-to-web-development-51b399911897
 
 ## Staff techniques
 
@@ -177,21 +163,6 @@ https://github.com/airbnb/javascript
 
 https://eslint.org/docs/user-guide/command-line-interface#caching
 
-
-## Tests unitaires : Jest, Couverture, Husky
-
-**Exemple d'un TU d'une page :**
-
-https://github.com/helabenkhalfallah/yo-mess-application/blob/main/src/features/messages/pages/MessagesDashboardPage-test.jsx
-
-
-**Exemple d'un TU d'un composant de présentation :**
-
-https://github.com/helabenkhalfallah/yo-mess-application/blob/main/src/features/messages/components/MessageAddView-test.jsx
-
-**Exemple d'un TU d'un service :**
-
-https://github.com/helabenkhalfallah/yo-mess-application/blob/main/src/features/messages/services/MessagesService-test.js
 
 **NB : les tests unitaires des composants et services sont obligatoires.**
 

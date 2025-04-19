@@ -17,13 +17,11 @@ import LazyRoute from './LazyRoute';
 import Path from './Path';
 
 const {
-  USER_LOGIN_PATH,
-  MESSAGES_DASHBOARD_PATH,
+  DREAM_APP_WECOME,
 } = Path;
 
 const {
-  UserLoginPage,
-  MessagesDashboardPage,
+  DreamAppWelcomePage,
 } = LazyRoute;
 
 const Router = () => (
@@ -35,27 +33,17 @@ const Router = () => (
       <Switch>
         <Route
           exact
-          path={USER_LOGIN_PATH}
+          path={DREAM_APP_WECOME}
           component={(props) => (
-            <UserLoginPage
+            <DreamAppWelcomePage
               {...props}
-              page="UserLoginPage"
-            />
-          )}
-        />
-        <Route
-          exact
-          path={MESSAGES_DASHBOARD_PATH}
-          component={(props) => (
-            <MessagesDashboardPage
-              {...props}
-              page="MessagesDashboardPage"
+              page="DreamAppWelcomePage"
             />
           )}
         />
         <Redirect
           from="/"
-          to={USER_LOGIN_PATH}
+          to={DREAM_APP_WECOME}
         />
       </Switch>
     </BrowserRouter>
