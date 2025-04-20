@@ -29,13 +29,13 @@ module.exports = {
   rules: {
     'react/jsx-props-no-spreading': 'off',
 
-    // reducing code complexity by capping the amount
+    /// reducing code complexity by capping the amount
     // of cyclomatic complexity allowed in a program.
     complexity: [
       'error',
       10,
     ],
-    // enforces a maximum depth that blocks can be nested to reduce code complexity.
+    /// enforces a maximum depth that blocks can be nested to reduce code complexity.
     'max-depth': [
       'error',
       3,
