@@ -68,13 +68,13 @@ module.exports = {
     '<rootDir>/src/**/?(*.)+(spec|test).js?(x)',
   ],
 
-  // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
+  /// An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/jest/tmp/',
   ],
 
-  // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
+  /// This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
   testURL: 'http://localhost',
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
